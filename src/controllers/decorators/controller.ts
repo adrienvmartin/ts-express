@@ -1,4 +1,7 @@
 import 'reflect-metadata';
+import express from 'express';
+
+export const router = express.Router();
 
 export function controller(routePrefix: string) {
   return function (target: Function) {
